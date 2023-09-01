@@ -1,0 +1,213 @@
+body {
+    body {
+    margin:0;
+  }
+  .wrapper {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706);
+      background-size: 600% 100%;
+      animation: gradient 16s linear infinite;
+      animation-direction: alternate;
+  }
+  @keyframes gradient {
+      0% {background-position: 0%}
+      100% {background-position: 100%}
+  }
+  }
+  .nav-content {
+      display: inline-block;
+      align-items: center;
+      background: #8c52ff;
+      font-family: "Poppins", sans-serif;
+      width: 100%;
+  }
+  .nav-logo {
+      position: relative;
+      display: inline-block;
+      justify-content: center;
+  }
+  /*
+      CSS class for styling a menu list.
+      Provides positioning, sizing, and alignment properties.
+  */
+
+  img {
+    height: 95px;
+    padding: 10px;
+    width: 90px;
+    position: relative;
+    top: 2px;
+  }
+
+  .menu-list {
+      position: relative;
+      min-width: 300px;
+      text-align: right;
+      right: 35px;
+      height: 120px;
+      float: right;
+  }
+  .menu-list ul#menu {
+      position: relative;
+      width: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 95px;
+  }
+  #menu li {
+      list-style: none;
+      padding: 10px 10px;
+      margin: 0 0.3vh;
+  }
+  #menu li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .menu a{
+    font-size: 22px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    position: relative;
+    padding: 4px 0;
+  }
+  .menu a::before{
+    content: "";
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+    transition: 0.5s transform ease;
+    transform: scale3d(0,1,1);
+    transform-origin: 0 50%;
+  }
+  .menu a:hover::before{
+    transform: scale3d(1,1,1);
+  }
+  .menu-1 a::before{
+    background: #E91E63;
+    transform-origin: 100% 50%;
+  }
+  .menu-1 a:hover::before{
+    transform-origin: 0 50%;
+  }
+  .menu-2 a::before{
+    background: #EC407A;
+  }
+  .menu-3 a::before{
+    transform-origin: 50% 50%;
+    background: #F06292;
+  }
+  .menu-4 a::before{
+    transform-origin: 100% 50%;
+    background: #EC407A;
+  }
+  .menu-5 a::before{
+    background: #E91E63;
+    transform-origin: 0 50%;
+  }
+  .menu-5 a:hover::before{
+    transform-origin: 100% 50%;
+  }
+  
+  .chips {
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      display: flex;
+      position: fixed;
+      top: 150px;
+      right: 0;
+      left: 240px;
+      background-color: white;
+  }
+  
+  .chips__item {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      background-color: rgba(0, 0, 0, 0.05);
+      font-size: 14px;
+      padding: 0 12px;
+      line-height: 30px;
+      border-radius: 16px;
+      margin: 12px 12px 12px 0;
+      cursor: pointer;
+  }
+  
+  .chips__item:first-child {
+      margin-left: 24px;
+  }
+  
+  .chips__item--selected {
+      background-color: black;
+      color: white;
+  }
+  .feed {
+      margin-top: 140px;
+      margin-left: 240px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  
+  .feed__item {
+      margin: 0 8px 40px 8px;
+  }
+  
+  .feed__item__thumbnail {
+      width: 360px;
+      height: 202px;
+      background-color: grey;
+  }
+  
+  .feed__item__info {
+      display: flex;
+      font-size: 14px;
+      color: rgb(96, 96, 96);
+  }
+  
+  .feed__item__info h3 {
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 4px;
+      color: rgb(3, 3, 3);
+  }
+  
+  .feed__item__info a {
+      text-decoration: none;
+      color: unset;
+  }
+  
+  .feed__item__info p {
+      margin: 0;
+  }
+  
+  .feed__item__info__avatar {
+      height: 36px;
+      width: 36px;
+      border-radius: 50%;
+      background-color: grey;
+      margin: 12px 12px 0 0;
+  }
+  
+  .feed__section {
+      border-top: 3px solid lightgrey;
+      border-bottom: 3px solid lightgrey;
+      margin: 24px 35px 48px;
+  }
+  
+  .feed__section h2 {
+      margin-left: 8px;
+  }
+  
+  .feed__section__items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
